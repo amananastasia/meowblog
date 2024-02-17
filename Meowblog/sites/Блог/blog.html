@@ -1,0 +1,242 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+  <head> 
+
+    <meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>IT Академия Meowblog | Блог</title> 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icon/apple-touch-icon.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon/favicon-32x32.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="../../styles/global.css" /> 
+    <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/components.css" />
+    <link rel="stylesheet" href="../../styles/page.css" />
+
+  </head> 
+
+  <body> 
+
+ 
+    <header class="header"> 
+      <div class="header__wrapper"> 
+        <a href="../../index.html"> 
+          <img class="header__logo" src="./images/Logo.PNG" alt="Логотип Meowblog"/>
+        </a> 
+        <nav> 
+          <ul class="menu"> 
+            <li class="menu__item"><a href="../../index.html">Курсы</a></li>  
+            <li class="menu__item"><a href="../Отзывы/otz.html">Отзывы</a></li> 
+            <li class="menu__item menu__item_active"><a href="./index.html">Блог</a></li> 
+          </ul>
+        </nav>
+      </div> 
+    </header> 
+
+  <body>
+    
+    <section class="section section_light">
+      <div class="hero">
+        <div class="hero__left">
+          <h1 class="hero__h1">
+            Блог<br />
+          </h1>
+        </div>
+      </div>
+    </section>
+
+	<section class="section">
+      <div class="section__wrapper">
+        <div class="headling">
+          <h2 class="headling__buttom">Блог</h2>
+          <div class="headling__top">
+            Мы с радостью рассказываем о востребованных профессиях и инструментах для работы. 
+            Исследуем рынок и с удовольствием помогаем вам найти дело по душе.
+          </div>
+        </div>
+
+		<div class="chip_wrapper">
+			<input class= "chip chip_active" type="button" value="Все" onmousedown="viewAllBlog()">
+			<input class= "chip" type="button" value="Код" onmousedown="viewCodeBlog()">
+			<input class= "chip" type="button" value="Финансы" onmousedown="viewFinanceBlog()">
+      <input class= "chip" type="button" value="Бизнес" onmousedown="viewBussinesBlog()">
+		</div>
+
+		<div class="courses_wrapper">
+
+      <div id="Finance">
+
+        <div class="course-card">
+          <div class="course-card__cover">
+            <a href="../Разработка/index.html"><img src="./images/finance1.jpg" alt="Изображение статьи"></a>
+          </div>
+          <div class="course-card__body">
+            <div>
+              <div class="course-card__title"><a href="../Разработка/index.html"><font color="white">Чем полезна финансовая грамотность и как ее прокачать</font> </a></div>
+              <div class="course-card__author">
+                Когда каждое решение прямо или опосредованно связано с деньгами, финансовая грамотность становится стратегическим инструментом. 
+                Рассказываем, как сделать так, чтобы вы управляли финансами, а не они вами.
+              </div>
+            </div>
+            <div class="course-card__tags">
+              <span class="tag">Финансы</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card__cover">
+            <a href="../Разработка/index.html"><img src="./images/finance2.jpg" alt="Изображение статьи"></a>
+          </div>
+          <div class="course-card__body">
+            <div>
+              <div class="course-card__title"><a href="../Разработка/index.html"> <font color="white">Какую роль играет операционный менеджер в работе компаний</font> </a></div>
+              <div class="course-card__author">
+                В мире бизнеса, где все решения имеют вес, операционный менеджер становится ключевым стратегическим игроком. 
+                Он следит, чтобы каждое звено в производственной цепи работало как часы, принося прибыль компании.
+              </div>
+            </div>
+            <div class="course-card__tags">
+              <span class="tag">Финансы</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="Code">
+
+        <div class="course-card">
+          <div class="course-card__cover">
+            <a href="../Разработка/index.html"><img src="./images/cod1.jpg" alt="Изображение статьи"></a>
+          </div>
+          <div class="course-card__body">
+            <div>
+              <div class="course-card__title"><a href="../Разработка/index.html"><font color="white">Защищают от цифровых угроз. Кто такие специалисты по кибербезопасности</font> </a></div>
+              <div class="course-card__author">
+                В мире, где угрозы безопасности данных неустанно эволюционируют, специалист по кибербезопасности становится незаменимым. 
+                Давайте узнаем, как этот профессионал противостоит виртуальным атакам.
+              </div>
+            </div>
+            <div class="course-card__tags">
+              <span class="tag">Код</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card__cover">
+            <a href="../Разработка/index.html"><img src="./images/cod2.png" alt="Изображение статьи"></a>
+          </div>
+          <div class="course-card__body">
+            <div>
+              <div class="course-card__title"><a href="../Разработка/index.html"><font color="white">Больше чем язык. Погружаемся в мир Java-разработчиков</font> </a> </div>
+              <div class="course-card__author">
+                Java — не просто язык программирования, это целая экосистема разработки и поддержки ПО. 
+                Редакция Skillbox.by рассказывает, кто такой Java-разработчик, и раскрывает перспективы этой области IT-индустрии.
+              </div>
+            </div>
+            <div class="course-card__tags">
+              <span class="tag">Код</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id ="Bussines">
+        <div  class="course-card">
+          <div class="course-card__cover">
+            <a href="../Разработка/index.html"><img src="./images/bussines1.jpg" alt="Изображение статьи"></a>
+          </div>
+          <div class="course-card__body">
+            <div>
+              <div class="course-card__title"><a href="../Разработка/index.html"><font color="white"> Как продуктовый аналитик трансформирует идеи в инновации</font></a></div>
+              <div class="course-card__author">
+                Как создать продукт, который будет соответствовать запросам аудитории и принесет прибыль? 
+                Ответ кроется в роли продуктового аналитика — специалиста, который строит стратегии на основе фактов, а не догадок.
+              </div>
+            </div>
+            <div class="course-card__tags">
+              <span class="tag">Бизнес</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card__cover">
+            <a href="../Разработка/index.html"><img src="./images/bussines2.jpg" alt="Изображение статьи"></a>
+          </div>
+          <div class="course-card__body">
+            <div>
+              <div class="course-card__title"><a href="../Разработка/index.html"><font color="white">Новые возможности в мире бизнеса. Как стать бизнес-аналитиком </font></a></div>
+              <div class="course-card__author">
+                Рассказываем о профессии бизнес-аналитика, благодаря которому компании принимают важные решения и оптимизируют бизнес-процессы.
+              </div>
+            </div>
+            <div class="course-card__tags">
+              <span class="tag">Бизнес</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+		</div>
+    </section>
+
+    <footer class="footer"> 
+
+      <div class="footer__wrapper"> 
+
+
+        <div class="footer__menu"> 
+          <nav> 
+            <div class="footer__menu-header">Меню</div> 
+            <ul class="menu-small"> 
+              <li class="menu-small__item"><a href="../../index.html">Курсы</a></li> 
+              <li class="menu-small__item"><a href="../Отзывы/otz.html">Отзывы</a></li> 
+              <li class="menu-small__item"><a href="./blog.html">Блог</a></li> 
+            </ul> 
+          </nav> 
+
+         
+          <div> 
+            <div class="footer__menu-header">Документы</div>
+            <ul class="menu-small"> 
+              <li class="menu-small__item"><a href="../Разработка/index.html">Договор Оферта</a></li> 
+              <li class="menu-small__item"><a href="../Разработка/index.html">Политика конфиденциальности</a></li> 
+          </div>
+
+          <div> 
+            <div class="footer__menu-header">Реквизиты</div> 
+            <ul class="menu-small"> 
+              <li class="menu-small__item">ИП Аман Анастасия Витальевна</li> 
+              <li class="menu-small__item">ИНН 773373765379</li> 
+              <li class="menu-small__item"><a href="mailto:contact@purpleschool.ru">contact@meowBlog.ru</a></li>
+            </ul> 
+          </div> 
+        </div>
+
+        <div class="footer__copywrite"> 
+          MeowBlog © 2015 - 2023 Все права защищены
+        </div> 
+
+      </div> 
+
+    </footer> 
+
+    <script src="../../jquery-3.7.1.min.js"></script>
+    <script src="../../script.js"></script>
+
+  </body> 
+</html> 
